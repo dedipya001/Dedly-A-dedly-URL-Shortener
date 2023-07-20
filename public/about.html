@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Choose Dedly?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Belanosima:wght@400;600;700&family=Exo:ital,wght@0,400;0,500;1,400;1,500&family=Prompt:ital,wght@0,300;0,400;1,300&display=swap');
+
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: ;
+      width: 100%;
+    }
+
+    .welcome h1 {
+      font-size: 60px;
+      font-family: 'Alegreya Sans', sans-serif;
+    }
+
+    .welcome p {
+      text-align: center;
+      font-size: x-large;
+    }
+
+    .welcomepara p {
+      text-align: center;
+      font-size: x-large;
+    }
+
+    .heading h1 {
+      font-size: 45px;
+      font-family: 'Alegreya Sans', sans-serif;
+      text-align: center;
+      margin-top: 15%;
+
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+
+    }
+
+    .container h1 {
+      padding: 5%;
+    }
+
+    .point {
+      margin-bottom: 50px;
+      display: flex;
+    }
+
+    .col-lg-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .point img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+    }
+
+    .partition {
+      width: 50%;
+      border-top: 3px solid rgb(0, 216, 151);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 25%;
+      margin: 10% 0%;
+    }
+
+    h2 {
+      font-family: 'Alegreya Sans', sans-serif;
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 5%;
+    }
+
+    p {
+      font-family: 'Alegreya', serif;
+      font-size: larger;
+      text-justify: inter-word;
+    }
+
+    .footerr {
+      background-color: #04698f;
+      padding: 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo img {
+      width: 100px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .footer-links ul li a {
+      text-decoration: none;
+      color: #f7f7f7;
+    }
+
+    .footer-social ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-social ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .footer-social ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .linkedin,
+    .instagram,
+    .facebook {
+      width: 48px;
+    }
+
+    .footer {
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo img {
+      width: 100px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .footer-links ul li a {
+      text-decoration: none;
+      color: #f8f8f8;
+    }
+
+    .footer-social ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-social ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .footer-social ul li a {
+      text-decoration: none;
+      color: #f8f8f8;
+    }
+
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .popup-content {
+      position: relative;
+      background-color: #f7f7f7;
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+      border: 2px solid rgb(0, 216, 151);
+      font-family: 'Alegreya', serif;
+      font-size: larger;
+      padding: 2%;
+      font-weight: 600;
+    }
+
+    .close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+      }
+
+      .footer-logo {
+        margin-bottom: 10px;
+      }
+
+      .footer-links ul li,
+      .footer-social ul li {
+        margin-right: 5px;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+      }
+
+      .footer-logo {
+        margin-bottom: 10px;
+      }
+
+      .footer-links ul li,
+      .footer-social ul li {
+        margin-right: 5px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .point img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="welcome">
+      <h1>Welcome to Dedly!</h1>
+      <p>A <em>Dedly</em> URL Shortener</p>
+    </div>
+    <div class="welcomepara">
+      <p>Welcome to Dedly, the free URL shortening service that unleashes the power of simplicity. With us, you not only
+        get one, but two links for your long URLs. Double your impact, double your reach, and experience the convenience
+        of Dedly. Join us and revolutionize your online presence today!.</p>
+    </div>
+    <div class="heading">
+      <h1>
+        Dedly: Link shortening made easy-peasy lemon squeezy
+      </h1>
+    </div>
+    <div class="point">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2">
+          <img src="/images/easeofuse-removebg-preview.png" alt="Point 1 Image">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2>Ease of Use</h2>
+          <p>Dedly's URL shortening service stands out for its exceptional ease of use. With its user-friendly
+            interface, anyone can effortlessly shorten their URLs in a matter of seconds. The intuitive design ensures
+            that even individuals without technical expertise can navigate the platform effortlessly. Regardless of your
+            level of technological proficiency, you can shorten URLs with just a few clicks, streamlining the process
+            and saving valuable time. Experience the simplicity and convenience of Dedly's URL shortening service today!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partition">
+      <br>
+    </div>
+
+    <div class="point">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="/images/multiple links.jpeg" alt="Point 2 Image">
+        </div>
+        <div class="col-lg-6">
+          <h2>Multiple Links</h2>
+          <p>Dedly's URL shortening service goes above and beyond by providing users with not just one, but two
+            shortened links for each long URL they provide. This feature allows you to share your content across
+            multiple platforms and channels without any limitations or restrictions. Whether you want to distribute your
+            content on social media, emails, or any other medium, Dedly ensures that you have the flexibility to reach
+            your audience effectively. With Dedly, you can expand your reach and maximize the impact of your content by
+            easily sharing multiple links tailored to different platforms or target audiences.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partition">
+      <br>
+    </div>
+
+    <div class="point">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2">
+          <img src="/images/customize.jpeg" alt="Point 3 Image">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2>You are Insured</h2>
+          <p>By selecting Dedly as your URL shortening service, you gain the advantage of insuring yourself against the
+            potential risks associated with long URLs. Traditional URLs are susceptible to errors caused by typos,
+            broken links, or expiration, resulting in a negative user experience. However, with Dedly, you can rest
+            assured knowing that your shortened links are a reliable and permanent solution. They will remain active and
+            accessible indefinitely, eliminating any concerns about link failures or inconvenience for your audience.
+            Dedly offers a seamless experience, ensuring that your valuable content is always accessible, boosting user
+            satisfaction, and giving you the peace of mind you deserve.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partition">
+      <br>
+    </div>
+
+    <div class="point">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="/images/analytics-removebg-preview.png" alt="Point 4 Image">
+        </div>
+        <div class="col-lg-6">
+          <h2>Analytics</h2>
+          <p>Dedly goes beyond just shortening your URLs; it also provides you with powerful built-in analytics to track
+            the performance of your shortened links. With Dedly's analytics feature, you can gain valuable insights into
+            various metrics, including the number of clicks your links receive, the sources of referral traffic, and
+            even geographic data of your audience. This data allows you to measure the effectiveness of your marketing
+            campaigns, understand user behavior, and make informed decisions to optimize your content and target
+            specific demographics. With Dedly's comprehensive analytics, you can take control of your link management
+            strategy and maximize the impact of your online presence.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partition">
+      <br>
+    </div>
+
+    <div class="point">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2">
+          <img src="images/reliability-half-removebg-preview (1).png" alt="Point 5 Image">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2>Reliable Service</h2>
+          <p>Reliability is a top priority at Dedly. We understand the frustration caused by broken or expired links,
+            which can result in missed opportunities and a poor user experience. That's why we've designed our service
+            to guarantee the accessibility of your shortened links at all times. With Dedly, you can say goodbye to the
+            worry of broken or expired links. Our robust infrastructure and advanced technologies ensure the stability
+            and longevity of your shortened URLs. Whether it's for personal use or business needs, you can rely on Dedly
+            to provide a reliable and uninterrupted link management solution. Trust in Dedly's commitment to delivering
+            a seamless experience, ensuring that your valuable content is always accessible to your audience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partition">
+      <br>
+    </div>
+  </div>
+
+  <footer class="footerr">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/images/new-image.png" alt="Dedly Logo">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/dedipya-goswami001/"><img src="/images/linkedin.png"
+                  class="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/dedipya.goswami/"><img src="/images/instagram.png"
+                  class="instagram"></i></a></li>
+            <!-- <li><a href="#" id="facebook-icon"><img src="/images/facebook.png" class="facebook"></i></a></li> -->
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div class="popup" id="facebook-popup">
+    <div class="popup-content">
+      <span class="close-icon">&times;</span>
+      <p>Sorry, the developer does not have a Facebook account 😢</p>
+    </div>
+  </div> -->
+
+  <script src="/index.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</body>
+
+</html>

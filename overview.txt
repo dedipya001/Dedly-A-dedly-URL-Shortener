@@ -1,0 +1,12 @@
+Navbar thakbe containing Logo Dedly (Similar to Bitly bt with my name) and RIght side e Home About Us and Pricing.
+
+Welcome Message...Welcome to Dedly
+A deadly Url Shortener for all your links.
+
+Main container containing the url shortener (from the video)
+
+Testimonials (if possible)
+
+Contact Us Form
+
+Follow Us LinkedIn Instagram 

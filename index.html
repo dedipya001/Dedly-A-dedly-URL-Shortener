@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dedly-a deadly URL shortener</title>
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0-alpha.1/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-kzZuZpWDubFVbc6rjWJo7yIstiGYZINkrUlJRa8qd1UcEy+7PRI/fUd1kAAACFAB" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/new-image.png" alt="Dedly Logo">
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="#tryus">Try Dedly</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="welcomecontainer" id="home">
+    <div class="welcomemsg">
+      <h1>Welcome to <img src="/images/new-image.png" class="welcomededimg" alt=""></h1>
+      <p class="welcomepara">A deadly URL shortener</p>
+      <p>Transform your longer and ugly links to short and crisp with Dedly.
+        Share them anywhere with just a click. </p>
+      <p>This is <em>Dedly</em> - your URL shortener cut shortened</p>
+    </div>
+    <div class="welcomeimg">
+      <img src="/images/screenshot.png" class="welcomeimg" alt="Man Pushing Link">
+    </div>
+  </div>
+
+  <div class="URLshortener" id="tryus">
+    <div class="URLmsg">
+      <h1 class="welcomemsg" id="URLboxmsg">
+        What would you like to shorten?
+      </h1>
+    </div>
+
+    <div class="URLbox">
+      <div class="shortenbox">
+        <input type="text" name="" id="longurl" placeholder="Place your longer links here">
+        <button id="shorten">Shorten</button>
+      </div>
+      <div class="copybox">
+        <input type="text" name="" id="shorturl" placeholder="Get your shortened links here">
+        <button id="copy1"><span class="material-symbols-outlined">
+            content_copy
+          </span></button>
+      </div>
+      <div class="nothappy">
+        <div class="nothappytext">
+          <h2>Not Happy With that Link. Dont Worry ! </h2>
+          <h2>We've got you covered. <em>Try This >></em></h2>
+          </h2>
+        </div>
+        <div class="nothappycopybox">
+          <input type="text" name="" id="shorturl2" placeholder="Get another shortened link here">
+          <button id="copy2"><span class="material-symbols-outlined">
+              content_copy
+            </span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="testimonials">
+  <div class="testimonialmsg">
+    <h1>What Dedly Customers have to Say</h1>
+  </div>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-coreui-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-coreui-interval="10000">
+        <img src="/images/test1.png" class="d-flex w-100" alt="...">
+  
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" data-coreui-interval="2000">
+        <img src="/images/test2.png" class="d-flex w-100" alt="...">
+  
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/test3.png" class="d-flex w-100" alt="...">
+  
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" type="button" data-coreui-target="#carouselExampleDark" data-coreui-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div class="partition">
+<br>
+</div>
+
+<div class="contact-section" id="contactus">
+  <h1>Buckle up for a Dedly-charged <em>Q&A</em> experience!</h1>
+  <div class="contactbox">
+  <form id="contactForm" class="contact-form" action="/submit">
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="middleName" id="middleName" placeholder="Middle Name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-group">
+      <textarea name="issue" id="issue" placeholder="Describe your issue" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+</div>
+
+<footer class="footerr">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/images/new-image.png" alt="Dedly Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/TOS.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/dedipya-goswami001/"><img src="/images/linkedin.png" class="linkedin"></a></li>
+          <li><a href="https://www.instagram.com/dedipya.goswami/"><img src="/images/instagram.png" class="instagram"></i></a></li>
+          <li><a href="#"  id="facebook-icon"><img src="/images/facebook.png" class="facebook"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup" id="facebook-popup">
+  <div class="popup-content">
+    <span class="close-icon">&times;</span>
+    <p>Sorry, the developer does not have a Facebook account 😢</p>
+  </div>
+</div>
+
+
+  <script src="/index.js"></script>
+  <script src="/copy.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0-alpha.1/dist/js/coreui.bundle.min.js" integrity="sha384-5NxMv75IP7CLKF29WBrmqLX5uQcA+32rVe4dAPsc2GY/4nT8JWZwDmWzJ+GnvRS+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.0.0-alpha.1/dist/js/coreui.bundle.min.js" integrity="sha384-SXlrEEDJbAKvqMVhGcYd15uBplq3FQq3qj2xbBa35z2D++k25xK2/UNKhKIhGyjU" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
