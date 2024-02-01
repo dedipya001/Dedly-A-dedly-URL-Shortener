@@ -3,7 +3,7 @@
 Dedly is a deadly URL shortener application that allows you to transform long and unwieldy URLs into short and concise links. Share these shortened links effortlessly anywhere with just a click. This project is built using HTML, CSS, JavaScript, Node.js, and Express.js.
 
 
-<h2>Developed this web application while interning at <a href="https://www.linkedin.com/company/codeswap-solutions-pvt-ltd/about/"> Codeswap Solutions Pvt. Ltd., Hyderabad </a> </h2>
+<h3>Developed this web application while interning at <a href="https://www.linkedin.com/company/codeswap-solutions-pvt-ltd/about/"> Codeswap Solutions Pvt. Ltd., Hyderabad </a> </h3>
 
 # Introduction
 URL shorteners are valuable tools for simplifying long URLs, making them easier to share on social media platforms, emails, and other digital channels. Dedly provides a user-friendly interface to shorten URLs quickly and efficiently.
